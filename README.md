@@ -1,76 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><title>HTML Clean Up Lab</title>
-</head>
+# Instructions for completing Lab 4 
+## Coding Hygiene
 
+**Objective:**
 
+Clean up this messy code. You're provided with a website that works just fine, but the code is a mess. This will both reduce the website’s SEO (Search Engine Optimization) and make it harder for your coworkers to help you maintain the website. Your job is to clean up the code. 
 
-<body>
-<!--Your Name-->
-<!--Course You are enrolled in-->
-<!--Your year in college or pre-college-->
-<div id="page-wrapper">
-<header id="header">
-			<a id="logo1" href="index.html"><img src="logo3.png"></a>
-			<h1>My Demo Site</h1>
-</header>
-<nav id="main-nav">
-<ul>
-<li><a href = "http://www.iit.edu">IIT Home</a></li>
-<li><a href="http://www.google.com">Google</a></li>
-<li><a href="http://www.microsoft.com">Microsoft</a></li>
-<li><a href = "http://www.cnn.com">CNN</a></li>
-<li><a href="http://admissions.iit.edu">IIT Admissions</a></li>
-</ul>
-</nav>
-    <main id="content-wrapper">
-      <div id="main-content">
-        <h2><b>This is our h2 Tag</b></h2>
-          <img class="imageR" src="./images/main.png">
-          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, perferendis, sed ab sequi molestias eum sint consectetur dicta praesentium ipsa repellat soluta placeat dolor! Accusantium impedit est explicabo harum aperiam!</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, perferendis, sed ab sequi molestias eum sint consectetur dicta praesentium ipsa repellat soluta placeat dolor! Accusantium impedit est explicabo harum aperiam!</p>
-          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, perferendis, sed ab sequi molestias eum sint consectetur dicta praesentium ipsa repellat soluta placeat dolor! Accusantium impedit est explicabo harum aperiam!</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, perferendis, sed ab sequi molestias eum sint consectetur dicta praesentium ipsa repellat soluta placeat dolor! Accusantium impedit est explicabo harum aperiam!</p>
-        <ul id="bul1">
-          <li> List 1</li>
-          <li>List 2</li>
-          <li> List 3</li>
-          <li>List 4</li>
-        </ul>
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, perferendis, sed ab sequi molestias eum sint consectetur dicta praesentium ipsa repellat soluta placeat dolor! Accusantium impedit est explicabo harum aperiam!</p>
-        <ul id="bul2"><li>List 1</li><li>List 2</li><li>List 3</li><li>List 4</li>        </ul>
-       <div id="center">
-          <iframe width="400" height="300" src="https://www.youtube.com/embed/-jn9aaNn8_I?si=D1HhLAWQ5awY9BfU frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
-    <aside id="side-content">
-   <h3>Interesting Articles</h3>
-     <ol id="news">
-      <a href="#"><li>Article 1</li></a>
-      <p>Preview of very interesting article article</p>
-      <a href="#"><li>Article 2</li></a>
-      <p> Preview of very interesting article article  </p>
-      <a href="#"><li>Article 3</li></a>
-      <p>Preview of very interesting article article</p>
-      <a href="#"><li>Article 4</li></a>
-      <p> Preview of very interesting article article  </p>
-     </ol>
-    </aside>
-   </main>
+**Process:**
+1. Start by reading [this short article](https://www.smashingmagazine.com/2008/11/12-principles-for-keeping-your-code-clean/ "article about clean html code") on the value of clean html code. 
+2. Use the *index.html* file and the *images* folder to create your lab repository. Include the images inside the folder.
+3. You are tasked with cleaning up the *index.html* file so that it looks (almost) exactly like the *lab4_final.html* file. Your alt tags should be the only difference. 
+4. Begin your clean up by checking to see if the HTML5 Skeleton Structure is correct. 
+5. Next, fix the abyssal indentation. Apply proper cascading. In our class, all children should be indented 2 spaces to the right of their parent element. Make sure to look at it in Github to see if there are any translation errors.
+6. Now that your code is properly cascaded, it will be easier to find other errors. Check the following list of common errors. 
+     * We never use ```<br>``` or ```<hr>``` to achieve line spacing. That is achieved using CSS. In fact, never use them as you are bound to use them incorrectly. 
+     * Do the images have proper alt tags? Watch [this video](https://www.youtube.com/watch?si=ersf1RprfCrIUAGA&v=-jn9aaNn8_I&feature=youtu.be&themeRefresh=1 "vidoe about the value of alt tag") to learn the incredible SEO value of good alt tags (Hint: “Your alt tags will not match the final.html tags”).
+     * We only use empty lines of code between semantic groupings of code. Like between ```<head>``` and ```<body>```, or between ```<section>```s.
+     * Check to see if there are any obsolete ```<b>``` or ```<i>``` tags. Change them to the updated, semantic tags. 
+     * There should be no space after the = sign in our attributes. Specifically, our links should be ```<a href="index.html">``` and not ```<a href = "index.html">```
+     * There should be no space after html elements. Specifically, our p elements should be ```<p>```Hello World```</p>``` and not ```<p>```    Hello World    ```</p>```
+     * Our links to files in our own repository do not need to start with (./). Specifically, href links should be href="folder/file.html" and not href="./ folder/file.html".
+7. Follow the instructions for testing and turning in labs. 
+1. **Improtant Validation Issues:** The html validation of a perfect lab 4 will still produce one warning and one error. 
+     * The warning will be for "lang=". The validator doesn't recognize the generic Latin text used in the body. I will never take points off for a validation warning. They are recomendations. Some are good. Others can be ignored. 
+     * The error is for the frameborder on the YouTube embeded code. Eventually we will learn how to use CSS to maintain a YouTube video's demensions. But not yet. So, for now we let this validation error slide. 
+1. Turn in the following:
+    * Repo Link
+    * Live Link
+    * Image of Validation Screen Capture
    
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
- <footer id = "footer" >Footer Content is here</footer>
- <hr/>
- </div>
-</body>
-
-</html>
