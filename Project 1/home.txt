@@ -1,21 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<head>
+	<head>
+		<meta charset="UTF-8">
+	</head>
 
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<title>Excerpts From Select Public Domain Books</title>
-
-
-</head>
-
-<body>
-
-    
-
-</body>
+	<body>
+		<ol id="news">
+          <li><a href="bad">Bad</a><div><p>Preview of very interesting article article</p></div></li>
+        </ol>
+	</body>
 
 
 </html>
