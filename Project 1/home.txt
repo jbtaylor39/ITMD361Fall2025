@@ -6,10 +6,12 @@
 	</head>
 
 	<body>
-		<ol id="news">
-          <li><a href="bad">Bad</a><div><p>Preview of very interesting article article</p></div></li>
-        </ol>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="bad">Bad</a><div><p>Preview of very interesting article article</p></div></li>
+       			 </ul>
+			</nav>
+		</header>
 	</body>
-
-
 </html>
